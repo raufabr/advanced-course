@@ -1,0 +1,15 @@
+.navbar .navbar-brand {
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: 24px;
+}
+
+.navbar .navbar-brand > .navbar-item,
+.navbar .navbar-brand .navbar-link {
+	display: inline-block;
+}
+
+.navbar-brand {
+	padding-top: 8px;
+}
