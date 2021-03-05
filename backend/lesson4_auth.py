@@ -29,7 +29,7 @@ def get_companies():
 # AUTH - check if a token is valid
 @api.route('/auth', methods=['POST'])
 def foo():
-  expectedValue = "PythonLevel2"
+  expectedValue = "PythonIntermediate"
   data = request.get_json()
   if data["token"] == expectedValue:
     AUTH_VALID = True
