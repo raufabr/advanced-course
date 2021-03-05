@@ -6,7 +6,7 @@
       "temperatureLow": 7,
       "temperatureHigh": 16,
       "Humidity": 85,
-      "6HourChange": [
+      "SixHourChange": [
         {
           "time": "12am",
           "temperature": 11,
@@ -35,7 +35,7 @@
       "temperatureLow": 8,
       "temperatureHigh": 14,
       "Humidity": 80,
-      "6HourChange": [
+      "SixHourChange": [
         {
           "time": "12am",
           "temperature": 8,
@@ -64,7 +64,7 @@
       "temperatureLow": 4,
       "temperatureHigh": 10,
       "Humidity": 88,
-      "6HourChange": [
+      "SixHourChange": [
         {
           "time": "12am",
           "temperature": 6,
@@ -93,7 +93,7 @@
       "temperatureLow": 7,
       "temperatureHigh": 11,
       "Humidity": 88,
-      "6HourChange": [
+      "SixHourChange": [
         {
           "time": "12am",
           "temperature": 7,
@@ -122,7 +122,7 @@
       "temperatureLow": 4,
       "temperatureHigh": 11,
       "Humidity": 87,
-      "6HourChange": [
+      "SixHourChange": [
         {
           "time": "12am",
           "temperature": 3,
@@ -151,7 +151,7 @@
       "temperatureLow": 2,
       "temperatureHigh": 7,
       "Humidity": 84,
-      "6HourChange": [
+      "SixHourChange": [
         {
           "time": "12am",
           "temperature": 2,
@@ -180,7 +180,7 @@
       "temperatureLow": 1,
       "temperatureHigh": 4,
       "Humidity": 3,
-      "6HourChange": [
+      "SixHourChange": [
         {
           "time": "12am",
           "temperature": 1,
