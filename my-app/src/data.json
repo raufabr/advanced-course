@@ -1,0 +1,207 @@
+{
+	"weather": [
+		{
+			"date": "2021-01-02T00:00:00.000Z",
+			"location": "London",
+			"temperatureLow": 6,
+			"temperatureHigh": 15,
+			"Humidity": 84,
+			"6HourChange": [
+				{
+					"time": "12am",
+					"temperature": 10,
+					"humidity": 80
+				},
+				{
+					"time": "6am",
+					"temperature": 8,
+					"humidity": 78
+				},
+				{
+					"time": "12pm",
+					"temperature": 15,
+					"humidity": 86
+				},
+				{
+					"time": "6pm",
+					"temperature": 6,
+					"humidity": 81
+				}
+			]
+		},
+		{
+			"date": "2021-02-02T00:00:00.000Z",
+			"location": "London",
+			"temperatureLow": 7,
+			"temperatureHigh": 13,
+			"Humidity": 80,
+			"6HourChange": [
+				{
+					"time": "12am",
+					"temperature": 7,
+					"humidity": 87
+				},
+				{
+					"time": "6am",
+					"temperature": 9,
+					"humidity": 78
+				},
+				{
+					"time": "12pm",
+					"temperature": 13,
+					"humidity": 86
+				},
+				{
+					"time": "6pm",
+					"temperature": 10,
+					"humidity": 81
+				}
+			]
+		},
+		{
+			"date": "2021-03-02T00:00:00.000Z",
+			"location": "London",
+			"temperatureLow": 5,
+			"temperatureHigh": 9,
+			"Humidity": 88,
+			"6HourChange": [
+				{
+					"time": "12am",
+					"temperature": 5,
+					"humidity": 87
+				},
+				{
+					"time": "6am",
+					"temperature": 9,
+					"humidity": 88
+				},
+				{
+					"time": "12pm",
+					"temperature": 7,
+					"humidity": 90
+				},
+				{
+					"time": "6pm",
+					"temperature": 5,
+					"humidity": 81
+				}
+			]
+		},
+		{
+			"date": "2021-04-02T00:00:00.000Z",
+			"location": "London",
+			"temperatureLow": 6,
+			"temperatureHigh": 10,
+			"Humidity": 88,
+			"6HourChange": [
+				{
+					"time": "12am",
+					"temperature": 6,
+					"humidity": 87
+				},
+				{
+					"time": "6am",
+					"temperature": 7,
+					"humidity": 78
+				},
+				{
+					"time": "12pm",
+					"temperature": 10,
+					"humidity": 86
+				},
+				{
+					"time": "6pm",
+					"temperature": 6,
+					"humidity": 81
+				}
+			]
+		},
+		{
+			"date": "2021-05-02T00:00:00.000Z",
+			"location": "London",
+			"temperatureLow": 3,
+			"temperatureHigh": 10,
+			"Humidity": 86,
+			"6HourChange": [
+				{
+					"time": "12am",
+					"temperature": 3,
+					"humidity": 87
+				},
+				{
+					"time": "6am",
+					"temperature": 4,
+					"humidity": 78
+				},
+				{
+					"time": "12pm",
+					"temperature": 8,
+					"humidity": 86
+				},
+				{
+					"time": "6pm",
+					"temperature": 10,
+					"humidity": 81
+				}
+			]
+		},
+		{
+			"date": "2021-06-02T00:00:00.000Z",
+			"location": "London",
+			"temperatureLow": 1,
+			"temperatureHigh": 6,
+			"Humidity": 83,
+			"6HourChange": [
+				{
+					"time": "12am",
+					"temperature": 1,
+					"humidity": 83
+				},
+				{
+					"time": "6am",
+					"temperature": 5,
+					"humidity": 80
+				},
+				{
+					"time": "12pm",
+					"temperature": 6,
+					"humidity": 81
+				},
+				{
+					"time": "6pm",
+					"temperature": 63,
+					"humidity": 80
+				}
+			]
+		},
+		{
+			"date": "2021-07-02T00:00:00.000Z",
+			"location": "London",
+			"temperatureLow": 0,
+			"temperatureHigh": 3,
+			"Humidity": 82,
+			"6HourChange": [
+				{
+					"time": "12am",
+					"temperature": 0,
+					"humidity": 83
+				},
+				{
+					"time": "6am",
+					"temperature": 1,
+					"humidity": 82
+				},
+				{
+					"time": "12pm",
+					"temperature": 1,
+					"humidity": 83
+				},
+				{
+					"time": "6pm",
+					"temperature": 3,
+					"humidity": 81
+				}
+			]
+		}
+	]
+}
