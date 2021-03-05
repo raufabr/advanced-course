@@ -14,17 +14,24 @@
 
 .search-bar {
 	margin-top: 24px;
+	margin-bottom: 48px;
+	margin-left: 80px;
+	margin-right: 80px;
 }
 
-.location {
+.heading {
 	display: flex;
+	width: 220px;
+	height: 120px;
 	justify-content: center;
 	align-content: center;
-	flex-direction: column;
+	/* flex-direction: column; */
 }
 
-.location-text {
+.heading-text {
 	margin-top: 12px;
+	font-size: medium;
+	font-weight: bold;
 }
 
 .daily-temp {
@@ -34,7 +41,9 @@
 }
 
 .daily-temp-row {
-	/* border: 1px solid black; */
+	border: 1px solid black;
 	padding: 12px;
+	height: 120px;
+	width: 180px;
 	border-radius: 12px;
 }

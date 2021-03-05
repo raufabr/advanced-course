@@ -1,71 +1,39 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "../src/components/Navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Temperature from "../src/components/Temperature";
+import "./data.json";
 import {
 	faTemperatureHigh,
 	faTemperatureLow,
 	faCity,
-	faClock,
+	faGrinBeamSweat,
 } from "@fortawesome/free-solid-svg-icons";
+import axios from "axios";
 
 function App() {
-	return (
-		<div className="App">
-			<Navbar />
+	const [location, setLocation] = useState("");
+	const [cityName, setCityName] = useState("");
+	const [data, setData] = useState([]);
+	const successMsg = "You've successfully integrated with the backend!";
+	const error = "Unable to connect to the backend.";
+	useEffect(() => {
+		getData();
+	}, []);
 
-			<div className="search-bar">Search bar</div>
+	const getData = async () => {
+		axios.get("http://localhost:5000/test").then((response) => {
+			setData(response.data);
+		});
+	};
 
-			<div className="container">
-				<div className="box location">
-					<FontAwesomeIcon icon={faCity} size="3x" />
-					<div className="location-text">London</div>
-				</div>
-				<div className="box location">
-					{" "}
-					<FontAwesomeIcon icon={faTemperatureHigh} size="3x" />
-					High Temperature
-				</div>
-				<div className="box location">
-					{" "}
-					<FontAwesomeIcon icon={faTemperatureLow} size="3x" />
-					Low Temperature
-				</div>
-				<div className="box location">Humidity</div>
-			</div>
-			<div className="daily-temp">
-				<div className="daily-temp-row">
-					<div>
-						{" "}
-						<FontAwesomeIcon icon={faClock} size="xl" /> 6AM
-					</div>
-					<div>Temperature</div>
-					<div>Humidity</div>
-				</div>
-				<div className="daily-temp-row box">
-					<div>
-						<FontAwesomeIcon icon={faClock} size="xl" /> 12AM
-					</div>
-					<div>Temperature: 24C</div>
-					<div>Humidity</div>
-				</div>
-				<div className="daily-temp-row">
-					<div>
-						{" "}
-						<FontAwesomeIcon icon={faClock} size="xl" /> 18PM
-					</div>
-					<div>Temperature</div>
-					<div>Humidity</div>
-				</div>
-				<div className="daily-temp-row">
-					<div>
-						<FontAwesomeIcon icon={faClock} size="xl" /> 00AM
-					</div>
-					<div>Temperature</div>
-					<div>Humidity</div>
-				</div>
-			</div>
-		</div>
-	);
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		console.log(location);
+		setCityName(location);
+	};
+	return <div className="App">{data.length > 1 ? successMsg : error}</div>;
 }
 
 export default App;
