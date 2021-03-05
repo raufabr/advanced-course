@@ -6,35 +6,10 @@
 	color: #61dafb;
 }
 
-.container {
-	margin-top: 24px;
-	display: flex;
-	justify-content: space-around;
+.selectBoxContainer {
+	margin: 40px;
 }
 
-.search-bar {
-	margin-top: 24px;
-}
-
-.location {
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	flex-direction: column;
-}
-
-.location-text {
-	margin-top: 12px;
-}
-
-.daily-temp {
-	margin-top: 24px;
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.daily-temp-row {
-	/* border: 1px solid black; */
-	padding: 12px;
-	border-radius: 12px;
+.btnContainer {
+	margin-left: 40px;
 }
