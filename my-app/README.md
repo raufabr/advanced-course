@@ -1,3 +1,3 @@
-Front end - Assuming you have node installed
+Front end application - Install nodejs from https://nodejs.org/en/ if you don't have it already.
 
-run npm ci in the folder with package.json
+'cd my-app' and then 'run npm ci'
