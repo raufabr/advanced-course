@@ -7,9 +7,19 @@
 }
 
 .selectBoxContainer {
-	margin: 40px;
+	margin: 48px;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .btnContainer {
 	margin-left: 40px;
+}
+
+.date-fields {
+	margin-right: 24px;
+	margin-left: 24px;
 }
