@@ -1,12 +1,14 @@
 import "./App.css";
 import Navbar from "../src/components/Navbar";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { getData } from "./api/location";
 import Day from "./components/Day";
 function App() {
 	const cities = ["Belfast", "Dublin", "Edinburgh", "London"];
-	const [selectCity, setSelectCity] = useState("");
+	const [selectCity, setSelectCity] = useState("Belfast");
 	const [data, setData] = useState([]);
+	const [startDate, setStartDate] = useState("2021-02-01");
+	const [endDate, setEndDate] = useState("2021-02-07");
 
 	const handleChange = (value) => {
 		setSelectCity(value);
@@ -14,7 +16,6 @@ function App() {
 	const handleSubmit = async () => {
 		const response = await getData(selectCity);
 		setData(response);
-		//	console.log("Handle Submit called" + data);
 	};
 	return (
 		<div className="App">
@@ -31,36 +32,43 @@ function App() {
 						})}
 					</select>
 				</div>
-				<input
-					className="is-primary is-normal is-rounded"
-					type="date"
-					id="start"
-					name="trip-start"
-					value="2021-02-07"
-					min="2021-02-01"
-					max="2021-02-07"
-				/>
-				<input
-					type="date"
-					id="start"
-					name="trip-start"
-					value="2018-07-22"
-					min="2021-02-07"
-					max="2021-02-07"
-				/>
-
-				<button
-					className="button is-rounded is-primary btnContainer"
-					onClick={handleSubmit}>
-					Submit
-				</button>
-				<div>
-					{data.data
-						? data.data.map((date) => {
-								return <Day date={date} />;
-						  })
-						: "Please enter a city"}
+				<div className="date-fields">
+					<input
+						className="is-primary is-normal is-rounded"
+						type="date"
+						id="start"
+						name="trip-start"
+						value={startDate}
+						onChange={(e) => setStartDate(e.target.value)}
+						min="2021-02-01"
+						max="2021-02-07"
+					/>
 				</div>
+				<div className="date-fields">
+					<input
+						type="date"
+						id="start"
+						name="trip-start"
+						value={endDate}
+						onChange={(e) => setEndDate(e.target.value)}
+						min="2021-02-01"
+						max="2021-02-07"
+					/>
+				</div>
+				<div>
+					<button
+						className="button is-rounded is-primary btnContainer"
+						onClick={handleSubmit}>
+						Submit
+					</button>
+				</div>
+			</div>
+			<div>
+				{data.data
+					? data.data.map((date) => {
+							return <Day date={date} />;
+					  })
+					: "Please enter a city"}
 			</div>
 		</div>
 	);
