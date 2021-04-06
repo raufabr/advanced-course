@@ -1,10 +1,23 @@
 import client from "./client";
 
-const endpoint = "/api/location/london";
+const formatDate = (date) => {
+	const newDate = date.split("-");
+	return newDate[0] + "-" + newDate[2] + "-" + newDate[1];
+};
 
-export const getData = async (location) => {
-	const response = await client.get(location.toLowerCase());
+export const getData = async (dateFrom, dateTo, location) => {
+	const formattedDateTo = formatDate(dateTo);
+	const formattedDateFrom = formatDate(dateFrom);
+
+	const response = await client.get(
+		"date/" +
+			formattedDateFrom +
+			"/" +
+			formattedDateTo +
+			"/loc/" +
+			location.toLowerCase()
+	);
 	console.log(response.ok);
-	//console.log(response.data);
+	console.log(response.data);
 	return response.data;
 };

@@ -14,7 +14,7 @@ function App() {
 		setSelectCity(value);
 	};
 	const handleSubmit = async () => {
-		const response = await getData(selectCity);
+		const response = await getData(startDate, endDate, selectCity);
 		setData(response);
 	};
 	return (
@@ -37,22 +37,22 @@ function App() {
 						className="is-primary is-normal is-rounded"
 						type="date"
 						id="start"
-						name="trip-start"
+						name="start"
 						value={startDate}
 						onChange={(e) => setStartDate(e.target.value)}
-						min="2021-02-01"
-						max="2021-02-07"
+						min="2021-01-01"
+						max="2021-01-07"
 					/>
 				</div>
 				<div className="date-fields">
 					<input
 						type="date"
 						id="start"
-						name="trip-start"
+						name="end"
 						value={endDate}
 						onChange={(e) => setEndDate(e.target.value)}
-						min="2021-02-01"
-						max="2021-02-07"
+						min="2021-01-01"
+						max="2021-01-07"
 					/>
 				</div>
 				<div>
@@ -64,8 +64,8 @@ function App() {
 				</div>
 			</div>
 			<div>
-				{data.data
-					? data.data.map((date) => {
+				{data?.length > 0
+					? data.map((date) => {
 							return <Day date={date} />;
 					  })
 					: "Please enter a city"}
