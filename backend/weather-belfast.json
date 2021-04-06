@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "date": "2021-01-02T00:00:00.000Z",
+      "date": "2021-01-01T00:00:00.000Z",
       "location": "Belfast",
       "temperatureLow": 9,
       "temperatureHigh": 18,
@@ -30,7 +30,7 @@
       ]
     },
     {
-      "date": "2021-02-02T00:00:00.000Z",
+      "date": "2021-02-01T00:00:00.000Z",
       "location": "Belfast",
       "temperatureLow": 10,
       "temperatureHigh": 16,
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "date": "2021-03-02T00:00:00.000Z",
+      "date": "2021-03-01T00:00:00.000Z",
       "location": "Belfast",
       "temperatureLow": 8,
       "temperatureHigh": 12,
