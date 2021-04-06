@@ -1,0 +1,207 @@
+{
+  "data": [
+    {
+      "date": "2021-01-02T00:00:00.000Z",
+      "location": "Belfast",
+      "temperatureLow": 9,
+      "temperatureHigh": 18,
+      "Humidity": 87,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 13,
+          "humidity": 83
+        },
+        {
+          "time": "6am",
+          "temperature": 11,
+          "humidity": 81
+        },
+        {
+          "time": "12pm",
+          "temperature": 18,
+          "humidity": 89
+        },
+        {
+          "time": "6pm",
+          "temperature": 9,
+          "humidity": 83
+        }
+      ]
+    },
+    {
+      "date": "2021-02-02T00:00:00.000Z",
+      "location": "Belfast",
+      "temperatureLow": 10,
+      "temperatureHigh": 16,
+      "Humidity": 83,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 10,
+          "humidity": 90
+        },
+        {
+          "time": "6am",
+          "temperature": 12,
+          "humidity": 81
+        },
+        {
+          "time": "12pm",
+          "temperature": 16,
+          "humidity": 89
+        },
+        {
+          "time": "6pm",
+          "temperature": 13,
+          "humidity": 84
+        }
+      ]
+    },
+    {
+      "date": "2021-03-02T00:00:00.000Z",
+      "location": "Belfast",
+      "temperatureLow": 8,
+      "temperatureHigh": 12,
+      "Humidity": 88,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 8,
+          "humidity": 90
+        },
+        {
+          "time": "6am",
+          "temperature": 12,
+          "humidity": 91
+        },
+        {
+          "time": "12pm",
+          "temperature": 11,
+          "humidity": 93
+        },
+        {
+          "time": "6pm",
+          "temperature": 8,
+          "humidity": 84
+        }
+      ]
+    },
+    {
+      "date": "2021-04-01T23:00:00.000Z",
+      "location": "Belfast",
+      "temperatureLow": 9,
+      "temperatureHigh": 13,
+      "Humidity": 91,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 9,
+          "humidity": 90
+        },
+        {
+          "time": "6am",
+          "temperature": 10,
+          "humidity": 91
+        },
+        {
+          "time": "12pm",
+          "temperature": 13,
+          "humidity": 89
+        },
+        {
+          "time": "6pm",
+          "temperature": 9,
+          "humidity": 84
+        }
+      ]
+    },
+    {
+      "date": "2021-05-01T23:00:00.000Z",
+      "location": "Belfast",
+      "temperatureLow": 6,
+      "temperatureHigh": 13,
+      "Humidity": 89,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 6,
+          "humidity": 90
+        },
+        {
+          "time": "6am",
+          "temperature": 7,
+          "humidity": 81
+        },
+        {
+          "time": "12pm",
+          "temperature": 11,
+          "humidity": 89
+        },
+        {
+          "time": "6pm",
+          "temperature": 13,
+          "humidity": 84
+        }
+      ]
+    },
+    {
+      "date": "2021-06-01T23:00:00.000Z",
+      "location": "Belfast",
+      "temperatureLow": 4,
+      "temperatureHigh": 9,
+      "Humidity": 86,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 4,
+          "humidity": 86
+        },
+        {
+          "time": "6am",
+          "temperature": 8,
+          "humidity": 83
+        },
+        {
+          "time": "12pm",
+          "temperature": 9,
+          "humidity": 84
+        },
+        {
+          "time": "6pm",
+          "temperature": 66,
+          "humidity": 83
+        }
+      ]
+    },
+    {
+      "date": "2021-07-01T23:00:00.000Z",
+      "location": "Belfast",
+      "temperatureLow": 3,
+      "temperatureHigh": 6,
+      "Humidity": 85,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 3,
+          "humidity": 86
+        },
+        {
+          "time": "6am",
+          "temperature": 4,
+          "humidity": 85
+        },
+        {
+          "time": "12pm",
+          "temperature": 4,
+          "humidity": 86
+        },
+        {
+          "time": "6pm",
+          "temperature": 6,
+          "humidity": 84
+        }
+      ]
+    }
+  ]
+}

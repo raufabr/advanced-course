@@ -1,0 +1,207 @@
+{
+  "data": [
+    {
+      "date": "2021-01-02T00:00:00.000Z",
+      "location": "Edinburgh",
+      "temperatureLow": 5,
+      "temperatureHigh": 14,
+      "Humidity": 83,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 9,
+          "humidity": 79
+        },
+        {
+          "time": "6am",
+          "temperature": 7,
+          "humidity": 77
+        },
+        {
+          "time": "12pm",
+          "temperature": 14,
+          "humidity": 85
+        },
+        {
+          "time": "6pm",
+          "temperature": 5,
+          "humidity": 80
+        }
+      ]
+    },
+    {
+      "date": "2021-02-02T00:00:00.000Z",
+      "location": "Edinburgh",
+      "temperatureLow": 6,
+      "temperatureHigh": 12,
+      "Humidity": 79,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 6,
+          "humidity": 86
+        },
+        {
+          "time": "6am",
+          "temperature": 8,
+          "humidity": 77
+        },
+        {
+          "time": "12pm",
+          "temperature": 12,
+          "humidity": 85
+        },
+        {
+          "time": "6pm",
+          "temperature": 9,
+          "humidity": 80
+        }
+      ]
+    },
+    {
+      "date": "2021-03-02T00:00:00.000Z",
+      "location": "Edinburgh",
+      "temperatureLow": 4,
+      "temperatureHigh": 8,
+      "Humidity": 87,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 4,
+          "humidity": 86
+        },
+        {
+          "time": "6am",
+          "temperature": 8,
+          "humidity": 87
+        },
+        {
+          "time": "12pm",
+          "temperature": 6,
+          "humidity": 89
+        },
+        {
+          "time": "6pm",
+          "temperature": 4,
+          "humidity": 80
+        }
+      ]
+    },
+    {
+      "date": "2021-04-01T23:00:00.000Z",
+      "location": "Edinburgh",
+      "temperatureLow": 5,
+      "temperatureHigh": 9,
+      "Humidity": 87,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 5,
+          "humidity": 86
+        },
+        {
+          "time": "6am",
+          "temperature": 6,
+          "humidity": 77
+        },
+        {
+          "time": "12pm",
+          "temperature": 9,
+          "humidity": 85
+        },
+        {
+          "time": "6pm",
+          "temperature": 5,
+          "humidity": 80
+        }
+      ]
+    },
+    {
+      "date": "2021-05-01T23:00:00.000Z",
+      "location": "Edinburgh",
+      "temperatureLow": 2,
+      "temperatureHigh": 9,
+      "Humidity": 86,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 2,
+          "humidity": 86
+        },
+        {
+          "time": "6am",
+          "temperature": 3,
+          "humidity": 77
+        },
+        {
+          "time": "12pm",
+          "temperature": 7,
+          "humidity": 85
+        },
+        {
+          "time": "6pm",
+          "temperature": 9,
+          "humidity": 80
+        }
+      ]
+    },
+    {
+      "date": "2021-06-01T23:00:00.000Z",
+      "location": "Edinburgh",
+      "temperatureLow": 0,
+      "temperatureHigh": 5,
+      "Humidity": 83,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 0,
+          "humidity": 82
+        },
+        {
+          "time": "6am",
+          "temperature": 4,
+          "humidity": 79
+        },
+        {
+          "time": "12pm",
+          "temperature": 5,
+          "humidity": 80
+        },
+        {
+          "time": "6pm",
+          "temperature": 62,
+          "humidity": 79
+        }
+      ]
+    },
+    {
+      "date": "2021-07-01T23:00:00.000Z",
+      "location": "Edinburgh",
+      "temperatureLow": 0,
+      "temperatureHigh": 2,
+      "Humidity": 82,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 0,
+          "humidity": 82
+        },
+        {
+          "time": "6am",
+          "temperature": 0,
+          "humidity": 82
+        },
+        {
+          "time": "12pm",
+          "temperature": 1,
+          "humidity": 82
+        },
+        {
+          "time": "6pm",
+          "temperature": 2,
+          "humidity": 80
+        }
+      ]
+    }
+  ]
+}

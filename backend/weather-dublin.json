@@ -1,0 +1,207 @@
+{
+  "data": [
+    {
+      "date": "2021-01-02T00:00:00.000Z",
+      "location": "Dublin",
+      "temperatureLow": 7,
+      "temperatureHigh": 16,
+      "Humidity": 85,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 11,
+          "humidity": 81
+        },
+        {
+          "time": "6am",
+          "temperature": 9,
+          "humidity": 79
+        },
+        {
+          "time": "12pm",
+          "temperature": 16,
+          "humidity": 87
+        },
+        {
+          "time": "6pm",
+          "temperatue": 7,
+          "humidity": 82
+        }
+      ]
+    },
+    {
+      "date": "2021-02-02T00:00:00.000Z",
+      "location": "Dublin",
+      "temperatureLow": 8,
+      "temperatureHigh": 14,
+      "Humidity": 80,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 8,
+          "humidity": 88
+        },
+        {
+          "time": "6am",
+          "temperature": 10,
+          "humidity": 79
+        },
+        {
+          "time": "12pm",
+          "temperature": 14,
+          "humidity": 85
+        },
+        {
+          "time": "6pm",
+          "temperature": 9,
+          "humidity": 80
+        }
+      ]
+    },
+    {
+      "date": "2021-03-02T00:00:00.000Z",
+      "location": "Dublin",
+      "temperatureLow": 4,
+      "temperatureHigh": 10,
+      "Humidity": 88,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 6,
+          "humidity": 88
+        },
+        {
+          "time": "6am",
+          "temperature": 10,
+          "humidity": 89
+        },
+        {
+          "time": "12pm",
+          "temperature": 8,
+          "humidity": 91
+        },
+        {
+          "time": "6pm",
+          "temperature": 6,
+          "humidity": 82
+        }
+      ]
+    },
+    {
+      "date": "2021-04-01T23:00:00.000Z",
+      "location": "Dublin",
+      "temperatureLow": 7,
+      "temperatureHigh": 11,
+      "Humidity": 88,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 7,
+          "humidity": 88
+        },
+        {
+          "time": "6am",
+          "temperature": 8,
+          "humidity": 79
+        },
+        {
+          "time": "12pm",
+          "temperature": 11,
+          "humidity": 87
+        },
+        {
+          "time": "6pm",
+          "temperature": 7,
+          "humidity": 82
+        }
+      ]
+    },
+    {
+      "date": "2021-05-01T23:00:00.000Z",
+      "location": "Dublin",
+      "temperatureLow": 4,
+      "temperatureHigh": 11,
+      "Humidity": 87,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 3,
+          "humidity": 88
+        },
+        {
+          "time": "6am",
+          "temperature": 5,
+          "humidity": 79
+        },
+        {
+          "time": "12pm",
+          "temperature": 9,
+          "humidity": 87
+        },
+        {
+          "time": "6pm",
+          "temperature": 9,
+          "humidity": 82
+        }
+      ]
+    },
+    {
+      "date": "2021-06-01T23:00:00.000Z",
+      "location": "Dublin",
+      "temperatureLow": 2,
+      "temperatureHigh": 7,
+      "Humidity": 84,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 2,
+          "humidity": 84
+        },
+        {
+          "time": "6am",
+          "temperature": 6,
+          "humidity": 81
+        },
+        {
+          "time": "12pm",
+          "temperature": 7,
+          "humidity": 82
+        },
+        {
+          "time": "6pm",
+          "temperature": 64,
+          "humidity": 81
+        }
+      ]
+    },
+    {
+      "date": "2021-07-01T23:00:00.000Z",
+      "location": "Dublin",
+      "temperatureLow": 1,
+      "temperatureHigh": 4,
+      "Humidity": 3,
+      "SixHourChange": [
+        {
+          "time": "12am",
+          "temperature": 1,
+          "humidity": 84
+        },
+        {
+          "time": "6am",
+          "temperature": 2,
+          "humidity": 83
+        },
+        {
+          "time": "12pm",
+          "temperature": 2,
+          "humidity": 84
+        },
+        {
+          "time": "6pm",
+          "temperature": 4,
+          "humidity": 82
+        }
+      ]
+    }
+  ]
+}
