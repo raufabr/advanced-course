@@ -19,5 +19,7 @@ export const getData = async (dateFrom, dateTo, location) => {
 	);
 	console.log(response.ok);
 	console.log(response.data);
+	if (!response.ok) return "Unable to find any data";
+
 	return response.data;
 };

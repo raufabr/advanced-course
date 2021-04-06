@@ -3,12 +3,13 @@ import Navbar from "../src/components/Navbar";
 import React, { useState } from "react";
 import { getData } from "./api/location";
 import Day from "./components/Day";
+
 function App() {
 	const cities = ["Belfast", "Dublin", "Edinburgh", "London"];
 	const [selectCity, setSelectCity] = useState("Belfast");
 	const [data, setData] = useState([]);
-	const [startDate, setStartDate] = useState("2021-02-01");
-	const [endDate, setEndDate] = useState("2021-02-07");
+	const [startDate, setStartDate] = useState("2021-01-01");
+	const [endDate, setEndDate] = useState("2021-01-07");
 
 	const handleChange = (value) => {
 		setSelectCity(value);
@@ -64,11 +65,17 @@ function App() {
 				</div>
 			</div>
 			<div>
-				{data?.length > 0
-					? data.map((date) => {
-							return <Day date={date} />;
-					  })
-					: "Please enter a city"}
+				{data?.length > 0 && typeof data !== "string" ? (
+					data.map((date) => {
+						return <Day date={date} />;
+					})
+				) : (
+					<>
+						{typeof data === "string"
+							? "Data not available in the backend"
+							: "Please enter a city"}
+					</>
+				)}
 			</div>
 		</div>
 	);
