@@ -15,7 +15,7 @@ def getLocationDataFile(location):
   else:
     return "Do not have any data on this location! Please try another location."
 
-def checkDate(date):
+def checkDate(date): 
   print("this is the date:", date)
   if("01-01" in date):
       return 0
