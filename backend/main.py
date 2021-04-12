@@ -8,7 +8,7 @@ from datetime import datetime
 # 3. You need a global var that will be checked on subsequent requests to make sure they are done post autherisation
 # 4. Need to update the other requests to check that a valid token has been autherised
 
-## Extra challenge: how would you make a 'refresh token'?
+## Extra challenge: how would you make a 'refresh token'? 
 
 AUTH_VALID = False
 
