@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "../src/components/Navbar";
 import React, { useState } from "react";
 import { getData } from "./api/location";
+import { auth } from "./api/auth";
 import Day from "./components/Day";
 function App() {
 	const cities = ["Belfast", "Dublin", "Edinburgh", "London"];
@@ -9,7 +10,10 @@ function App() {
 	const [data, setData] = useState([]);
 	const [startDate, setStartDate] = useState("2021-01-01");
 	const [endDate, setEndDate] = useState("2021-01-07");
-
+	const [authToken, setAuthToken] = useState("");
+	const [authData, setAuthData] = useState(
+		"Enter a token to authenticate yourself."
+	);
 	const handleChange = (value) => {
 		setSelectCity(value);
 	};
@@ -17,9 +21,33 @@ function App() {
 		const response = await getData(startDate, endDate, selectCity);
 		setData(response);
 	};
+
+	const handleAuthSubmit = async () => {
+		const response = await auth(authToken);
+		setAuthData(response);
+	};
+
 	return (
 		<div className="App">
 			<Navbar />
+
+			<div className="selectBoxContainer">
+				<input
+					className="input is-primary is-medium is-rounded"
+					placeholder="Authentication token"
+					type="text"
+					id="auth"
+					name="auth"
+					value={authToken}
+					onChange={(e) => setAuthToken(e.target.value)}
+				/>
+				<button
+					className="button is-rounded is-primary btnContainer"
+					onClick={handleAuthSubmit}>
+					Authenticate!
+				</button>
+			</div>
+			<div>{authData}</div>
 			<div className="selectBoxContainer">
 				<div
 					className="select is-normal is-rounded is-primary"

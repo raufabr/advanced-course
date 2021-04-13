@@ -10,7 +10,7 @@ export const getData = async (dateFrom, dateTo, location) => {
 	const formattedDateFrom = formatDate(dateFrom);
 
 	const response = await client.get(
-		"date/" +
+		"api/date/" +
 			formattedDateFrom +
 			"/" +
 			formattedDateTo +
