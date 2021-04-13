@@ -1,0 +1,8 @@
+.container {
+	margin-top: 24px;
+	padding: 24px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: left;
+}
