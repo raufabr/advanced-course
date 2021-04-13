@@ -2,16 +2,6 @@ from flask import Flask
 import json
 from flask_cors import CORS
 from datetime import datetime
-from flask import request
-
-# 1. make sure you have request imported from the flask library
-# 2. make sure you are using POST so you allow for data to be sent with the request
-# 3. You need a global var that will be checked on subsequent requests to make sure they are done post autherisation
-# 4. Need to update the other requests to check that a valid token has been autherised
-
-## Extra challenge: how would you make a 'refresh token'? 
-
-AUTH_VALID = False
 
 def getLocationDataFile(location):
   if(location == "london" ):
@@ -25,7 +15,7 @@ def getLocationDataFile(location):
   else:
     return "Do not have any data on this location! Please try another location."
 
-def checkDate(date):
+def checkDate(date): 
   print("this is the date:", date)
   if("01-01" in date):
       return 0
@@ -59,80 +49,60 @@ def foo():
     return "this was not expected"
 
 # GET all the data from the file
-@api.route('/allData', methods=['GET'])
-def get_companies():
-  if AUTH_VALID:
-    return data
-  else:
-    return "Sorry you need a valid token! Try /auth with a token."
-
-# GET all the data from the file
 @api.route('/test', methods=['GET'])
-def test():
-  if AUTH_VALID:
-    return "The /test endpoint is working!"
-  else:
-    return "Sorry you need a valid token! Try /auth with a token."
+def get_companies():
+  return "The /test endpoint is working!"
 
 @api.route('/api/loc/<location>', methods=['GET'])
 def getlocation(location):
-  if AUTH_VALID:
-    filename = getLocationDataFile(location)
-    if (filename == "error"):
-      return "Do not have any data on this location! Please try another location."
+  filename = getLocationDataFile(location)
+  if (filename == "error"):
+    return "Do not have any data on this location! Please try another location."
 
-    # Get the data from the file and return it
-    data = ""
-    with open(filename) as json_file:
-      data = json.load(json_file)
-    return data
-  else:
-    return "Sorry you need a valid token! Try /auth with a token."
+  # Get the data from the file and return it
+  data = ""
+  with open(filename) as json_file:
+    data = json.load(json_file)
+  return data
 
 # Date expected in YYYY-DD-MM format
 @api.route('/api/date/<date>/loc/<location>', methods=['GET'])
 def getdate(_date, location):
-  if AUTH_VALID:
-    filename = getLocationDataFile(location)
-    if (filename == "error"):
-      return "Do not have any data on this location! Please try another location."
-
-    date = _date + "T23:00:00.000Z"
-
-    with open(filename) as json_file:
-      data = json.load(json_file)
-    for i in range(0,6):
-      if(data["data"][i]["date"] == date):
-        return data["data"][i]
-  else:
-    return "Sorry you need a valid token! Try /auth with a token."
+  filename = getLocationDataFile(location)
+  if (filename == "error"):
+    return "Do not have any data on this location! Please try another location."
+  
+  date = _date + "T23:00:00.000Z"
+  
+  with open(filename) as json_file:
+    data = json.load(json_file)
+  for i in range(0,6):
+    if(data["data"][i]["date"] == date):
+      return data["data"][i]
 
 # Expected format for dates are YYYY-DD-MM
 @api.route('/api/date/<_dateFrom>/<_dateTo>/loc/<location>', methods=['GET'])
 def getdaterange(_dateFrom, _dateTo, location):
-  if AUTH_VALID:
-    filename = getLocationDataFile(location)
-    if (filename == "error"):
-      return "Do not have any data on this location! Please try another location."
+  filename = getLocationDataFile(location)
+  if (filename == "error"):
+    return "Do not have any data on this location! Please try another location."
 
-    dateFrom = _dateFrom + "T23:00:00.000Z"
-    dateTo = _dateTo + "T23:00:00.000Z"
-    startingIndex = checkDate(dateFrom)
-    endingIndex = checkDate(dateTo) + 1
+  dateFrom = _dateFrom + "T23:00:00.000Z"
+  dateTo = _dateTo + "T23:00:00.000Z"
+  startingIndex = checkDate(dateFrom)
+  endingIndex = checkDate(dateTo) + 1
 
-    print("starting number:", startingIndex)
-    print("ending number:", endingIndex)
+  print("starting number:", startingIndex)
+  print("ending number:", endingIndex)
 
-    with open(filename) as json_file:
-      data = json.load(json_file)
+  with open(filename) as json_file:
+    data = json.load(json_file)
 
-    collatedData = []
-    for i in range(startingIndex,endingIndex):
-      collatedData.append(data["data"][i])
-    returnData =  json.dumps(collatedData)
-    return returnData
-  else:
-    return "Sorry you need a valid token! Try /auth with a token."
+  collatedData = []
+  for i in range(startingIndex,endingIndex):
+    collatedData.append(data["data"][i])
+  returnData =  json.dumps(collatedData)
+  return returnData
 
 if __name__ == '__main__':
     api.run()
