@@ -14,6 +14,11 @@ from datetime import datetime
 api = Flask(__name__)
 CORS(api)
 
+# AUTH - check if a token is valid
+@api.route('/auth', methods=['POST'])
+def foo():
+  return "yourCodeHere"
+
 # GET all the data from the file
 @api.route('/test', methods=['GET'])
 def get_companies():
