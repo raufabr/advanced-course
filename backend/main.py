@@ -2,6 +2,7 @@ from flask import Flask
 import json
 from flask_cors import CORS
 from datetime import datetime
+from flask import request
 
 # 1. make sure you have request imported from the flask library
 # 2. make sure you are using POST so you allow for data to be sent with the request
@@ -50,8 +51,8 @@ CORS(api)
 @api.route('/auth', methods=['POST'])
 def foo():
   expectedValue = "PythonIntermediate"
-  data = request.get_json()
-  if data["token"] == expectedValue:
+  data = request.headers.get('token')
+  if data == expectedValue:
     AUTH_VALID = True
     return "you have a token!"
   else:
@@ -67,7 +68,7 @@ def get_companies():
 
 # GET all the data from the file
 @api.route('/test', methods=['GET'])
-def get_companies():
+def test():
   if AUTH_VALID:
     return "The /test endpoint is working!"
   else:
